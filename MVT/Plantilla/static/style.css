@@ -435,7 +435,7 @@ ul {
 .contacto_form {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    margin-top: -0.8rem;
 }
 
 .contacto_form label {
@@ -443,6 +443,10 @@ ul {
     font-size: 0.85rem;
     color: var(--color-dorado);
     margin-top: 0.8rem;
+}
+
+.contacto_form lebel:first-of-type {
+    margin-top: 0;
 }
 
 .contacto_form input,
@@ -1673,10 +1677,20 @@ body:has(.contacto) .footer {
 .equpo_card,
 .servicio_card,
 .contacto_info {
-    background-color: rgba(10, 1, 43, 0.7);
+    background-color: rgba(16, 3, 61, 0.7);
     backdrop-filter: blur(6px);
 }
 
+.equpo_card {
+    border: 1px solid var();
+    transition: border-color 0.3s ease, box-shadow 0.3s aese, transform 0.3s ease;
+}
+
+.equpo_card:hover {
+    border-color: var(--color-dorado);
+    box-shadow: 0 0 18px rgba(161, 245, 5, 0.137);
+     transform: translateY(-4px);
+}
 /* casos (registro, historial, gestión y detalle)*/
 
 /* Botón que ocupa todo el ancho (panel de la cuenta) */
